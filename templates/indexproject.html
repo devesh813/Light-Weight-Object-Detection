@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light_Weight_Object_Detection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: black; /* Background color */
+            color: white; /* Text color */
+        }
+        hr{
+            border-top: 2px solid #4c4ce4;
+        }
+        header.feature-box.right {
+            background-color: black; /* Background color */
+            color: white;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px; 
+            
+        }
+
+        header.feature-box.right .company-name {
+            font-weight: bold;
+            font-size: 42px; /* Increased font size by 50% */
+            color: white; /* Text color */
+            margin-right: auto;
+        }
+
+        header.feature-box.right nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header.feature-box.right nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header.feature-box.right nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s; /* Added hover effect */
+        }
+
+        header.feature-box.right nav ul li a:hover {
+            color: black; /* Text color */
+            background-color: #4c7ce4; /* Hover background color */
+        }
+
+        header.feature-box.below {
+            height: 550px; /* Decreased banner height */
+            background-color: #4c7ce4; /* Color theme */
+            margin-top: 30px; /* Added top margin */
+            margin-bottom: 70px;
+            background-image: url("../static/images/banner7.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-x: left;
+            /* background-position: center; */
+        }
+
+        header.feature-box.below hr {
+            border: none;
+            border-top: 2px solid #BCE44C; /* Horizontal line color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .details {
+            padding: 0px;
+            font-size: 40px;
+            background-color: #4c7ce4; /* Color theme */
+            text-align: center;
+            margin-bottom: -30px;
+            color: black; /* Text color */
+        }
+
+        .features {
+            background: black; /* Background color */
+            color: white; /* Text color */
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+        }
+
+        .features figure {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .features figure img {
+            border: 7px solid #4c7ce4;
+            border-radius: 5%;
+            width: 400px;
+            height: 250px;
+        }
+
+        div.main {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            display: flex;
+            letter-spacing: 1px;
+        }
+
+        div.main h1{
+            font-size: 40px;
+        }
+        div.main h4{
+            margin-bottom: 0px;
+        }
+
+        div.main p{
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+
+        .subpart2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .subpart2 figure img {
+            height: 600px;
+            width: 500px;
+        }
+
+        .contactpage {
+            margin: 20px;
+            padding: 20px; /* Added padding */
+        }
+
+        #textbox {
+            font-size: 18pt;
+            height: 42px;
+            width: 1000px;
+        }
+
+        #textboxes {
+            font-size: 18pt;
+            height: 42px;
+            width: 1000px;
+        }
+
+        footer {
+            background-color: black; /* Background color */
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            color: white; /* Text color */
+            font-size: 20px;
+            padding: 20px; /* Added padding */
+        }
+
+
+        .team-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #BCE44C;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.team-section h1 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+<header class="feature-box right">
+    <div class="company-name">Group 2</div>
+    <nav>
+        <ul>
+            <li><a href="indexproject.html">Home</a></li>
+            <li><a href="https://detect.roboflow.com/?model=indoort-object-detection&version=1&api_key=fh6zT5tfXkhAk2czepwk" target="_blank">Static Image</a></li>
+            <!-- <li><a href="/webcam">LiveWebCam</a></li> -->
+            <li><a href = "https://app.roboflow.com/hardik-qrcat/indoort-object-detection/visualize/1?webcam=true"target = "_blank">LiveWebCam</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<header class="feature-box below">
+</header>
+<section class="details">
+    <h1>Inference Results</h1>
+</section>
+<section class="features">
+    <figure>
+        <img src="../static/images/10.jpg" alt="Model Result 1">
+        <figcaption>Result 1</figcaption>
+    </figure>
+    <figure>
+        <img src="../static/images/11.jpg" alt="Model Result 2">
+        <figcaption>Result 2</figcaption>
+    </figure>
+    <figure>
+        <img src="../static/images/12.jpg" alt="Model Result 3">
+        <figcaption>Result 3</figcaption>
+    </figure>
+</section>
+<div class="main">
+    <div class="subpart1">
+        <h1>Light Weight Object Detection Model</h1><br>
+        <!-- <h4>》What is YOLOv5?</h4>
+        <p>YOLOv5 is a model in the You Only Look Once (YOLO) family of computer vision models. YOLOv5 is commonly used for detecting objects. YOLOv5 comes in four main versions: small (s), medium (m), large (l), and extra large (x), each offering progressively higher accuracy rates. Each variant also takes a different amount of time to train.
+        </p><br> -->
+        <br>
+        <br>
+        <br>
+        <h4>》Dataset Link: </h4><br>
+        <p>Indoor-Object-Detection Image - <a href="https://universe.roboflow.com/cued-project/indoor-object-detection-brbbt/dataset/2" target="_blank">Click Here</a></p><br>
+        <h4>》Google Colab Link to Train and Deploy model: </h4><br>
+        <!-- <p>Train_TFLite2_Object_Detction_Model  -  <a href="https://colab.research.google.com/drive/1aQJMULmxhW8XhZc2e_aWQmM0hI_cg0B9?authuser=1#scrollTo=e4WtI8i5K96w" target="_blank">Click Here</a></p><br> -->
+        <p>Train_TFLite2_Object_Detction_Model  -  <a href="https://colab.research.google.com/drive/1eBOVXF3KCOxncvAuznCZqp5lHi6Uxw62#scrollTo=eGEUZYAMEZ6f" target="_blank">Click Here</a></p><br>
+
+    </div>
+    <div class="subpart2">
+        <figure>
+            <img src="../static/images/preview.jpg" alt="MobileNet_ssdv2">
+        </figure>
+    </div>
+</div>
+
+<hr>
+<div class="team-section">
+    <h1>Our Team</h1>
+    <div class="team-member">
+        <img src="../static/images/devesh2.jpg" alt="Devesh Borkar">
+        <h3>Devesh Borkar</h3>
+    </div>
+    <div class="team-member">
+        <img src="../static/images/hardik4.jpg" alt="Team Member 2">
+        <h3>Hardik Thakkar</h3>
+    </div>
+    <div class="team-member">
+        <img src="../static/images/om2.jpg" alt="Team Member 3">
+        <h3>Om Bhagat</h3>
+    </div>
+    <!-- <div class="team-member">
+        <img src="../static/images/team_member4.jpeg" alt="Team Member 4">
+        <h3>Pranav Rathi</h3>
+    </div> -->
+</div>
+<footer>
+    
+</footer>
+</body>
+</html>
