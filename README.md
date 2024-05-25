@@ -45,6 +45,6 @@ We used custom [Indoor-Object-Detection Image Dataset](https://universe.roboflow
 3.Om Bhagat
 
 ## Liscence
-Distributed under the MIT License. See  for more information.
+Distributed under the MIT [License](https://github.com/devesh813/Light-Weight-Object-Detection/blob/main/LICENSE). See  for more information.
 
 Please adhere to this project's code of conduct.
