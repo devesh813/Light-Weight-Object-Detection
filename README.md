@@ -1,4 +1,5 @@
-# Light-Weight-Object-Detection
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Poetsen+One&pause=1000&random=false&width=435&lines=Light+Weight+Object+Detection+%F0%9F%9A%80)](https://git.io/typing-svg)
+
 Using MobileNet SSd v2, Yolo v5
 
 ## Problem Definition
